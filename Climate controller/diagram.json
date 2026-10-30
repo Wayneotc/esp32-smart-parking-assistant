@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "author": "Velxio",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-velxio-esp32-devkit-c-v4",
+      "id": "esp32-devkit-c-v4",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-breadboard",
+      "id": "breadboard_1793343450914_6d9kgic9d",
+      "top": 80,
+      "left": 265,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-grove-latching-relay",
+      "id": "grove_latching_relay_1793343461244_vmv0k7agj",
+      "top": -52,
+      "left": 568,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pro-dc-motor",
+      "id": "pro_dc_motor_1793343467946_a3f9c86fh",
+      "top": -133,
+      "left": 779,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_1793343478585_n7qhillj1",
+      "top": 96,
+      "left": 303,
+      "attrs": {
+        "value": false,
+        "brightness": 1,
+        "color": "red",
+        "lightColor": null,
+        "label": "",
+        "flip": false
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "resistor_1793343487515_k3vijxhur",
+      "top": 181,
+      "left": 262,
+      "rotate": 90,
+      "attrs": {
+        "value": "1000"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht22_1793343504519_eookohml3",
+      "top": 23,
+      "left": 370,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer_1793343528573_27y7zlw7r",
+      "top": 44,
+      "left": 473,
+      "attrs": {
+        "hasSignal": false
+      }
+    },
+    {
+      "type": "wokwi-lcd1602-i2c",
+      "id": "lcd1602_i2c_1793343752984_bumn5oryt",
+      "top": -134,
+      "left": 181,
+      "attrs": {
+        "i2cAddress": "0x27",
+        "pins": "i2c",
+        "background": "green",
+        "color": "black",
+        "backlight": true
+      }
+    },
+    {
+      "type": "wokwi-junction",
+      "id": "junction_d29bbc52-a477-4dd7-be39-9eacd0f82592",
+      "top": -25,
+      "left": 160,
+      "attrs": {
+        "color": "#0000cc"
+      }
+    },
+    {
+      "type": "wokwi-junction",
+      "id": "junction_65785b97-d2cf-4d32-a48b-3b9852e9b1ec",
+      "top": -16,
+      "left": 517,
+      "attrs": {
+        "color": "#000000"
+      }
+    },
+    {
+      "type": "wokwi-junction",
+      "id": "junction_b1568aef-efc4-4612-b468-fad731e7d6f1",
+      "top": -170,
+      "left": 524,
+      "attrs": {
+        "color": "#cc0000"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "breadboard_1793343450914_6d9kgic9d:5t.d",
+      "breadboard_1793343450914_6d9kgic9d:bn.3",
+      "black",
+      []
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:12t.d",
+      "breadboard_1793343450914_6d9kgic9d:bp.9",
+      "#FF00FF",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:5V",
+      "breadboard_1793343450914_6d9kgic9d:bp.1",
+      "#cc0000",
+      []
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:13t.d",
+      "esp32-devkit-c-v4:4",
+      "#cc0000",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:GND.3",
+      "breadboard_1793343450914_6d9kgic9d:bn.1",
+      "black",
+      []
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:15t.d",
+      "breadboard_1793343450914_6d9kgic9d:bn.11",
+      "black",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:5V",
+      "esp32-devkit-c-v4:5V",
+      "#cc0000",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:5V",
+      "lcd1602_i2c_1793343752984_bumn5oryt:VCC",
+      "#cc0000",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:GND.1",
+      "lcd1602_i2c_1793343752984_bumn5oryt:GND",
+      "black",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:21",
+      "lcd1602_i2c_1793343752984_bumn5oryt:SDA",
+      "#22c55e",
+      []
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:24t.d",
+      "esp32-devkit-c-v4:25",
+      "#32CD32",
+      []
+    ],
+    [
+      "lcd1602_i2c_1793343752984_bumn5oryt:SCL",
+      "junction_d29bbc52-a477-4dd7-be39-9eacd0f82592:J",
+      "#0000cc",
+      []
+    ],
+    [
+      "junction_d29bbc52-a477-4dd7-be39-9eacd0f82592:J",
+      "esp32-devkit-c-v4:22",
+      "#0000cc",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:26",
+      "grove_latching_relay_1793343461244_vmv0k7agj:SIG",
+      "#8B4513",
+      []
+    ],
+    [
+      "grove_latching_relay_1793343461244_vmv0k7agj:NO1",
+      "pro_dc_motor_1793343467946_a3f9c86fh:+",
+      "#cc0000",
+      []
+    ],
+    [
+      "esp32-devkit-c-v4:GND.2",
+      "junction_65785b97-d2cf-4d32-a48b-3b9852e9b1ec:J",
+      "black",
+      []
+    ],
+    [
+      "junction_65785b97-d2cf-4d32-a48b-3b9852e9b1ec:J",
+      "grove_latching_relay_1793343461244_vmv0k7agj:GND",
+      "black",
+      []
+    ],
+    [
+      "pro_dc_motor_1793343467946_a3f9c86fh:-",
+      "junction_65785b97-d2cf-4d32-a48b-3b9852e9b1ec:J",
+      "black",
+      []
+    ],
+    [
+      "grove_latching_relay_1793343461244_vmv0k7agj:VCC",
+      "junction_b1568aef-efc4-4612-b468-fad731e7d6f1:J",
+      "#cc0000",
+      []
+    ],
+    [
+      "junction_b1568aef-efc4-4612-b468-fad731e7d6f1:J",
+      "esp32-devkit-c-v4:5V",
+      "#cc0000",
+      []
+    ],
+    [
+      "grove_latching_relay_1793343461244_vmv0k7agj:COM2",
+      "junction_b1568aef-efc4-4612-b468-fad731e7d6f1:J",
+      "#cc0000",
+      []
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:6b.i",
+      "esp32-devkit-c-v4:33",
+      "#8B00FF",
+      []
+    ],
+    [
+      "led_1793343478585_n7qhillj1:A",
+      "breadboard_1793343450914_6d9kgic9d:6t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "led_1793343478585_n7qhillj1:C",
+      "breadboard_1793343450914_6d9kgic9d:5t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "resistor_1793343487515_k3vijxhur:1",
+      "breadboard_1793343450914_6d9kgic9d:6t.c",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "resistor_1793343487515_k3vijxhur:2",
+      "breadboard_1793343450914_6d9kgic9d:6b.g",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "breadboard_1793343450914_6d9kgic9d:25t.d",
+      "breadboard_1793343450914_6d9kgic9d:bn.20",
+      "black",
+      []
+    ],
+    [
+      "buzzer_1793343528573_27y7zlw7r:1",
+      "breadboard_1793343450914_6d9kgic9d:24t.a",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "buzzer_1793343528573_27y7zlw7r:2",
+      "breadboard_1793343450914_6d9kgic9d:25t.a",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "dht22_1793343504519_eookohml3:VCC",
+      "breadboard_1793343450914_6d9kgic9d:12t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "dht22_1793343504519_eookohml3:SDA",
+      "breadboard_1793343450914_6d9kgic9d:13t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "dht22_1793343504519_eookohml3:NC",
+      "breadboard_1793343450914_6d9kgic9d:14t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ],
+    [
+      "dht22_1793343504519_eookohml3:GND",
+      "breadboard_1793343450914_6d9kgic9d:15t.b",
+      "",
+      [
+        "$bb"
+      ]
+    ]
+  ]
+}

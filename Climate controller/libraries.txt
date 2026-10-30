@@ -1,0 +1,11 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+Adafruit SSD1306
+DHT kxn
+ArduinoJson
+UniversalTelegramBot
+Adafruit GFX Library
+Adafruit Unified Sensor
+Adafruit BusIO
+LiquidCrystal_I2C
